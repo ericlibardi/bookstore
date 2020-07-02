@@ -1,5 +1,5 @@
 function retrieveData (){
-    fetch('https://api.myjson.com/bins/zyv02', {
+    fetch('https://api.jsonbin.io/b/5ea833484c87c3359a632938', {
     method: "GET",
     mode: 'cors',
     cache: 'default' 
@@ -52,7 +52,7 @@ function fillPage3 (array) {
     var fillModalLightBox2 = `
     <div class="mySlides">
       <div class="numbertext">${index + 1} / ${array.books.length}</div>
-      <img src="${element.detail}" style="width:100%">
+      <img src="${element.details}" style="width:100%">
     </div>
     `
     document.getElementById("getLightBox").innerHTML += fillModalLightBox2
